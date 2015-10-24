@@ -4,9 +4,8 @@
   <body>
     <div class = "container">
       <div class = "form-group">
-    <form method ="POST" action ="analyzeEmail.php">
+    <form method ="post" action ="analyzeEmail.php">
         <textarea class = "form-control text" name = "emailEntry" >
-
         </textarea>
         <input type="submit" class="btn btn-default submit-button">
     </form>
