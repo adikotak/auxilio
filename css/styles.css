@@ -9,3 +9,29 @@ input.btn.btn-default.submit-button{
  display: block;
  margin-left: auto;
 }
+
+nav.navbar.navbar-default{
+  margin-bottom: 0px;
+  
+}
+
+button.btn.btn-default.btn-lg{
+  height: 75px;
+  width: 200px;
+}
+
+.divs
+{
+  style="height: 93vh;
+  margin-top:0px
+}
+
+p.header
+{
+  font-family:'Open Sans';
+  font-weight:300;
+  color:#fff;
+  margin-top:60px;
+  margin-left:120px;
+  font-size:24px;
+}
