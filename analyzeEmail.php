@@ -8,10 +8,6 @@
   $originalEntry = $_POST['emailEntry'];
   $originalEntry = trim($originalEntry);
 
-  echo ("Original Message:" . "<br>");
-  echo ($originalEntry . "<br>");
-  echo ("<br>");
-
   $splitRegex = "/[\s]/";
   $words = preg_split($splitRegex, $originalEntry);
 
@@ -58,10 +54,10 @@
     echo ("<p style='color:red'> Need Meeting Location </p>");
   }
 
-  $db = "ad_cda192a887ff69f";
+  $db = "ad_85361005547dc1d";
   $host = "us-cdbr-iron-east-03.cleardb.net";
-  $username = "be69c4201781ac";
-  $password = "abaf0684";
+  $username = "bc27100502fac4";
+  $password = "40b5465f";
 
   $con = new mysqli($host, $username, $password, $db);
 
@@ -71,18 +67,26 @@
 
   for ($i=0; $i<$numWords; $i++)
   {
+    $assigned = false;
     $result = $con->query($query);
     if ($result->num_rows>0)
     {
       while ($row = $result->fetch_assoc())
       {
-          $word = $row['words'];
+          $word = $row['word'];
           if ($words[$i] == $word)
           {
-            echo("Word ". ($i + 1) . ", " . $words[$i] . " is a slang word." . "<br>");
+            echo ("<a style='color:red'>" . $words[$i] . "</a>");
+            echo (" ");
+            $assigned = true;
           }
 		  }
 		}
+    if (!$assigned)
+    {
+      echo ($words[$i]);
+      echo (" ");
+    }
   }
   mysqli_close($con);
 
