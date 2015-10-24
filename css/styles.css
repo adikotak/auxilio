@@ -1,7 +1,8 @@
-
+body { padding-top: 65px; }
 
 textarea.form-control.text{
-  height: 85vh;
+  height: 80vh;
+  margin-top: 20px;
 }
 
 input.btn.btn-default.submit-button{
@@ -12,10 +13,10 @@ input.btn.btn-default.submit-button{
 
 nav.navbar.navbar-default{
   margin-bottom: 0px;
-  
+
 }
 
-button.btn.btn-default.btn-lg{
+a.btn.btn-default.btn-lg{
   height: 75px;
   width: 200px;
 }
