@@ -4,8 +4,11 @@
 $username = '5fca9714-65c7-4789-9c1c-fc4345ec9b66';
 $password = '0vX8TffEgqTV';
 $url = 'https://stream.watsonplatform.net/speech-to-text/api/v1/recognize';
-$file = fopen('tmp/0001.flac', 'r');
-$size = filesize('tmp/0001.flac');
+
+$file_name = 'tmp/bush_god_bless_converted.flac';
+
+$file = fopen($file_name, 'r');
+$size = filesize($file_name);
 $filldata = fread($file,$size);
 $headers = array("Content-Type: audio/flac", "Transfer-Encoding: chunked");
 
