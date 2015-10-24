@@ -10,14 +10,28 @@
 
   echo ("Original Message:" . "<br>");
   echo ($originalEntry . "<br>");
+  echo ("<br>");
 
   $splitRegex = "/[\s]/";
   $words = preg_split($splitRegex, $originalEntry);
 
   $numWords = count($words);
 
+  $greetingNotPresent = true;
+
+  if ($words[0]=="Hello" || $words[0]=="Dear" || $words[0]=="Hi")
+  {
+    $greetingNotPresent = false;
+  }
+
+  if ($greetingNotPresent)
+  {
+    echo ("<p style='color:red'> You should probably add a greeting </p>");
+  }
+
   $meetingPresent = false;
-  $timePresent = false;
+  $timeNotPresent = true;
+  $locationNotPresent = true;
 
   for ($i=0; $i<$numWords; $i++)
   {
@@ -25,15 +39,23 @@
     {
       $meetingPresent = true;
     }
-    if ($words[i]== "at")
+    if ($words[i]== "at" || $words[i]=="tomorrow" || $words[i]=="tonight" || $words[i]=="today")
     {
-      $timePresent = true;
+      $timeNotPresent = false;
+    }
+    if ($words[i]=="in")
+    {
+      $locationNotPresent = false;
     }
   }
 
-  if ($meetingPresent && !$timePresent)
+  if ($meetingPresent && $timeNotPresent)
   {
-    echo ("Need TIME");
+    echo ("<p style='color:red'> Need Location Time </p>");
+  }
+  if ($meetingPresent && $locationNotPresent)
+  {
+    echo ("<p style='color:red'> Need Meeting Location </p>");
   }
 
   $db = "ad_cda192a887ff69f";
