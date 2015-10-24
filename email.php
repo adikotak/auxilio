@@ -6,8 +6,9 @@
       <div class = "form-group">
     <form method ="POST" action ="analyzeEmail.php">
         <textarea class = "form-control text" name = "emailEntry" >
-           Write something here
+
         </textarea>
+        <input type="submit" class="btn btn-default submit-button">
     </form>
   </div>
   </div>
