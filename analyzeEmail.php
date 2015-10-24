@@ -6,6 +6,11 @@
 
 <?php
   $originalEntry = $_POST['emailEntry'];
+  $originalEntry = trim($originalEntry);
+
+  echo ("Original Message:" . "<br>");
+  echo ($originalEntry . "<br>");
+
   $splitRegex = "/[\s]/";
   $words = preg_split($splitRegex, $originalEntry);
 
@@ -27,7 +32,7 @@
           $word = $row['words'];
           if ($words[$i] == $word)
           {
-            echo($words[$i]);
+            echo("Word ". $i . ", " . $words[$i] . " is a slang word." . "<br>");
           }
 		  }
 		}
