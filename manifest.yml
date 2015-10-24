@@ -1,0 +1,7 @@
+applications:
+- name: auxilio
+  framework: node
+  runtime: node10
+  memory: 512M
+  instances: 1
+  host: auxilio
