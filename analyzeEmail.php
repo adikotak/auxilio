@@ -5,8 +5,17 @@
      <div class = "color" style = "background-color: #59ABE3; height: 100vh;"  </div>
     <div class ="container">
       <center>
-      <h4 style= "font-family:'Open Sans'; color:#EDEDED; width:100vh; font-weight:100; line-height:50x; font-size:30px; margin-top:40px">Your Email's Results.</h4>
+
+        <form style="margin-top:20px" action="sendEmail.php" method="post">
+          <input type="text" name="fromEmail" placeholder="From">
+          <input type="text" name="toEmail" placeholder="To">
+          <input type="text" name="emailSubject" placeholder="Subject">
+          <button name = "submit" > Send Email </button>
+        </form>
+
+    <h4 style= "font-family:'Open Sans'; color:#EDEDED; width:100vh; font-weight:100; line-height:50x; font-size:30px; margin-top:40px">Your Email's Results.</h4>
     </center>
+
       <div class="panel panel-default" style = "margin-top: 60px">
         <div class="panel-body" >
           <?php
@@ -43,13 +52,14 @@
 
             if ($meetingPresent && $timeNotPresent)
             {
-              echo ("<p style='color:red; font-size:20px'> Need Location Time </p>");
+              echo ("<p style='color:red; font-size:15px'> You mentioned a meeting, but no meeting time. </p>");
             }
             if ($meetingPresent && $locationNotPresent)
             {
-              echo ("<p style='color:red; font-size:20px'> Need Meeting Location </p>");
+              echo ("<p style='color:red; font-size:15px'> You mentioned a meeting and meeting time, but no location </p>");
             }
 
+            $sendText = "";
             $db = "ad_85361005547dc1d";
             $host = "us-cdbr-iron-east-03.cleardb.net";
             $username = "bc27100502fac4";
@@ -79,10 +89,17 @@
                 echo ($words[$i]);
                 echo (" ");
               }
+              $sendText = $sendText . " " . $words[$i];
             }
+
+            session_start();
+
+            $_SESSION["message"] = $sendText;
             mysqli_close($con);
-          ?>
-        </div>
+
+
+      ?>
+              </div>
       </div>
 </div>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
