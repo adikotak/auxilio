@@ -8,7 +8,7 @@
       <h4 style= "font-family:'Open Sans'; color:#EDEDED; width:100vh; font-weight:100; line-height:50x; font-size:30px; margin-top:40px">Your Email's Results.</h4>
     </center>
       <div class="panel panel-default" style = "margin-top: 60px">
-        <div class="panel-body">
+        <div class="panel-body" >
           <?php
             $originalEntry = $_POST['emailEntry'];
             $originalEntry = trim($originalEntry);
@@ -27,29 +27,29 @@
             $meetingPresent = false;
             $timeNotPresent = true;
             $locationNotPresent = true;
-            for ($i=0; $i<$numWords; $i++)
+
+            if (in_array("meeting", $words) || in_array("Meeting", $words))
             {
-              if ($words[$i]== "meeting" || $words[$i]== "Meeting")
-              {
-                $meetingPresent = true;
-              }
-              if ($words[i]== "at" || $words[i]=="tomorrow" || $words[i]=="tonight" || $words[i]=="today")
-              {
-                $timeNotPresent = false;
-              }
-              if ($words[i]=="in")
-              {
-                $locationNotPresent = false;
-              }
+              $meetingPresent = true;
             }
+            if (in_array("at", $words) || in_array("tomorrow", $words) || in_array("tonight", $words) || in_array("today", $words))
+            {
+              $timeNotPresent = false;
+            }
+            if (in_array("in", $words))
+            {
+              $locationNotPresent = false;
+            }
+
             if ($meetingPresent && $timeNotPresent)
             {
-              echo ("<p style='color:red'> Need Location Time </p>");
+              echo ("<p style='color:red; font-size:20px'> Need Location Time </p>");
             }
             if ($meetingPresent && $locationNotPresent)
             {
-              echo ("<p style='color:red'> Need Meeting Location </p>");
+              echo ("<p style='color:red; font-size:20px'> Need Meeting Location </p>");
             }
+
             $db = "ad_85361005547dc1d";
             $host = "us-cdbr-iron-east-03.cleardb.net";
             $username = "bc27100502fac4";
