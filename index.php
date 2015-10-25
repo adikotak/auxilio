@@ -20,7 +20,10 @@
 		<div class= "featureEssay" style="height: 95vh; background-color:#3498DB; margin-top:0px">
 			<div class="text" style="padding-top:50px; margin-left:350px; width:800px">
 			<p style="font-family:'Open Sans'; font-weight:300; color:#fff; margin-top:60px; margin-left:120px; font-size:35px;">Writing. Better.</p>
-			<p style="font-family:'Open Sans'; font-weight:300; color:#fff; padding-top:30px; text-align:left; margin-left:120px; font-size:22px;">Get contextual feedback from Auxilio's assistive writing feature to never have another typo. Using the Atomattic grammar API, grammar mistakes and spelling errors are a thing of the past thanks to Auxilio.</p>
+			<p style="font-family:'Open Sans'; font-weight:300; color:#fff; padding-top:30px; text-align:left; margin-left:120px; font-size:22px;">Get contextual feedback from Auxilio's assistive writing feature to never have another typo. Using the Automattic grammar API, grammar mistakes and spelling errors are a thing of the past thanks to Auxilio.</p>
+			<center>
+			<a href="essay.php" class= "btn btn-default btn-md" style= "font-family:'Open Sans'; font-size:15px; vertical-align: middle; margin-right: 5vh";>Check Your Essay!</a>
+		</center>
 		</div>
 	</div>
 	<section id ="featureEmail"></a>
@@ -28,17 +31,32 @@
 			<div class="text2" style="padding-top:50px; margin-left:350px; width:800px">
 				<p style="font-family:'Open Sans'; font-weight:300; color:#fff; margin-top:60px; margin-left:120px; font-size:35px;">Writing. Reimagined.</p>
 				<p style="font-family:'Open Sans'; font-weight:300; color:#fff; padding-top:30px; text-align:left; margin-left:120px; font-size:22px;">Learn to improve writing through Auxilio's smart suggestive features. Auxilio's smart engine automatically makes suggestions for your emails to make them more formal and precise. Auxilio will offer suggestions from adding details for meetings to making changes from colloquial terms.</p>
+				<center>
+				<a href="email.php" class= "btn btn-default btn-md" style= "font-family:'Open Sans'; font-size:15px; vertical-align: middle; margin-top: 3vh; margin-right: 5vh";>Check Your Email!</a>
+			</center>
 			</div>
 		</div>
+
+		<section id = "speechToText">
+		<div class = "speechToText" style ="height: 95vh; background-color:#3A539B; margin-top:0px">
+			<div class="text" style="padding-top:50px; margin-left:350px; width:800px">
+			<p style="font-family:'Open Sans'; font-weight:300; color:#fff; margin-top:60px; margin-left:120px; font-size:35px;">Writing. Smarter.</p>
+			<p style="font-family:'Open Sans'; font-weight:300; color:#fff; padding-top:30px; text-align:left; margin-left:120px; font-size:22px;">With the use of IBM BlueMIX's Watson Speech to Text API, users can dictate their writings into Auxilio for a new dimension of writing profreereading.</p>
+			<center>
+			<a href="getfile.php" class= "btn btn-default btn-md" style= "font-family:'Open Sans'; font-size:15px; vertical-align: middle; margin-right: 5vh";>Check Your Speech!</a>
+		</center>
+		</div>
+	</div>
+
 		<section id="team"></a>
-		<div class="team" style="height:95vh; background-color:#16A085; margin-top:0px">
+		<div class="team" style="height:95vh; background-color:#336E7B; margin-top:0px">
 			<div class="teamText" style="padding-top:50px; margin-left:350px; width:800px">
 				<p style="font-family:'Open Sans'; font-weight:300; color:#fff; margin-top:60px; margin-left:120px; font-size:35px;">Team.</p>
 				<p style="font-family:'Open Sans'; font-weight:300; color:#fff; padding-top:30px; text-align:left; margin-left:120px; font-size:22px;">We are a team of high school students who created Auxilio at Hacking EDU.</p>
 			</div>
 		</div>
 		<section id ="contactAbout"></a>
-		<div class="contactAbout" style="height:95vh; background-color:#66CC99; margin-top:0px">
+		<div class="contactAbout" style="height:95vh; background-color:#03C9A9; margin-top:0px">
 			<div class="contactAbout" style="padding-top:50px; margin-left:350px; width:800px">
 				<p style="font-family:'Open Sans'; font-weight:300; color:#fff; margin-top:60px; margin-left:120px; font-size:35px;">Contact Us.</p>
 				<p style="font-family:'Open Sans'; font-weight:300; color:#fff; padding-top:30px; text-align:left; margin-left:120px; font-size:22px;">If you're interested in Auxilio feel free to email any of us.</p>

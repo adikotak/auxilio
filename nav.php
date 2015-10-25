@@ -44,8 +44,10 @@
     <li role="separator" class="divider"></li>
           <li><a data-scroll href="#featureEssay">Auxilio for Essays</a></li>
           <li><a data-scroll href="#featureEmail">Auxilio for Emails</a></li>
+          <li><a data-scroll href="#speechToText">Speech to Text</a></li>
           <li><a data-scroll href="#team">Team</a></li>
-          <li><a data-scroll href="#contactAbout">Contact</a></li>
+          <li><a data-scroll href="#contactAbout" style = "margin-right: 20px">Contact</a></li>
+
         </ul>
       </li>
     </ul>
