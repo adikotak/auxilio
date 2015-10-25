@@ -24,6 +24,7 @@
 			<span class="glyphicon glyphicon-pencil" aria-hidden="true" style = "position: absolute; top: 140%; left: 15%; margin-right: -50%; transform: translate(-50%, -50%)">  </span>
 			<center>
 			<a href="essay.php" class= "btn btn-default btn-md" style= "font-family:'Open Sans'; font-size:15px; vertical-align: middle; margin-right: 5vh";>Check Your Essay!</a>
+			<img src="automatticLogo.png" alt="automattic" style="width:750px;height:100px; position: absolute; top: 175%; left: 20%;">
 		</center>
 		</div>
 	</div>
@@ -48,6 +49,8 @@
 
 			<center>
 			<a href="getfile.php" class= "btn btn-default btn-md" style= "font-family:'Open Sans'; font-size:15px; vertical-align: middle; margin-right: 5vh";>Check Your Speech!</a>
+			<img src="blueMixLogo.png" alt="blueMix" style="width:442px;height:149x; position: absolute; top: 358%; left: 15%;">
+			<img src="watsonLogo.png" alt="blueMix" style="width:215px;height:215px; position: absolute; top: 350%; left: 60%;">
 		</center>
 		</div>
 	</div>
