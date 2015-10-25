@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+  <div class = "color" style = "background-color: #59ABE3; height: 100vh;"  </div>
 <?php
 include ('nav.php');
 $essay = trim($_GET['essayEntry']);

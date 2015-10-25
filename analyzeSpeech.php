@@ -1,6 +1,8 @@
 <html>
 <body>
   <div class="container">
+    <div class = "color" style = "background-color: #59ABE3; height: 100vh;"  </div>
+    <h2> Speech to Text Analysis </h2>
 
 <?php
 $file_name = $_GET["fileName"];

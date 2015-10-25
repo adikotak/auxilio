@@ -2,6 +2,7 @@
 <html lang="en">
   <?php include ('nav.php'); ?>
   <body>
+    <div class = "color" style = "background-color: #59ABE3; height: 100vh;"  </div>
     <div class ="container">
 
 <?php
