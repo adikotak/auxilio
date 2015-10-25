@@ -1,5 +1,4 @@
 <head>
-  <title> Auxilio - Write the World </title>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -31,7 +30,7 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" data-scroll href="#home" style = "font-size:30px; margin-left: 20px;" >Auxilio</a>
+    <a class="navbar-brand"  href="index.php#home" >Home</a>
   </div>
 
   <!-- Collect the nav links, forms, and other content for toggling -->
@@ -44,11 +43,11 @@
     <ul class="nav navbar-nav navbar-right">
 
     <li role="separator" class="divider"></li>
-          <li><a data-scroll href="index.php#featureEssay">Auxilio for Essays</a></li>
-          <li><a data-scroll href="index.php#featureEmail">Auxilio for Emails</a></li>
-          <li><a data-scroll href="index.php#speechToText">Speech to Text</a></li>
-          <li><a data-scroll href="index.php#team">Team</a></li>
-          <li><a data-scroll href="index.php#contactAbout" style = "margin-right: 20px">Contact</a></li>
+          <li><a  href="index.php#featureEssay">Auxilio for Essays</a></li>
+          <li><a  href="index.php#featureEmail">Auxilio for Emails</a></li>
+          <li><a  href="index.php#speechToText">Speech to Text</a></li>
+          <li><a  href="index.php#team">Team</a></li>
+          <li><a  href="index.php#contactAbout" style = "margin-right: 20px">Contact</a></li>
 
         </ul>
       </li>
