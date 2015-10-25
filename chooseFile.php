@@ -1,4 +1,6 @@
 <html>
+<body>
+  <div class="container">
 <?php
 define("UPLOAD_DIR", "uploads/");
 
@@ -33,4 +35,6 @@ if (!empty($_FILES["myFile"])) {
     chmod(UPLOAD_DIR . $name, 0644);
 }
 ?>
+</div>
+</body>
 </html>
