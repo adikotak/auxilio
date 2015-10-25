@@ -3,7 +3,7 @@
 
 <html>
 <?php include ('nav.php'); ?>
-	<body style="min-width:12000px; margin: 0 auto; font-family:Helvetica";>
+	<body style="max-width:1500px; margin: 0 auto; font-family:Helvetica";>
 		<section id="home"></a>
 		<div class = "home" style="height:100vh; background-color: #59ABE3; background-size: 100% 100%;">
 			<container style = "position:absolute; top: 50%; left: 50%; margin-right: -50%; transform: translate(-50%, -50%)">
