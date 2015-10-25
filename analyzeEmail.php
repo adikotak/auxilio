@@ -63,15 +63,20 @@
   $con = new mysqli($host, $username, $password, $db);
 
   $table = "slangwords";
-
-  $query = "SELECT * FROM $table";
+  $lettersArray = array (0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25);
 
   for ($i=0; $i<$numWords; $i++)
   {
     $assigned = false;
-    $result = $con->query($query);
+    $firstChar = $words[i][0];
+    $whichLetter = ord($firstChar) - ord('a');
+    $whichNextLetter = $whichLetter +1;
     if ($result->num_rows>0)
     {
+      $query = "SELECT * FROM $table WHERE idslang BETWEEN $lettersArray[$whichLetter] AND $lettersArray[$whichNextLetter]";
+
+      $result = $con->query($query);
+
       while ($row = $result->fetch_assoc())
       {
           $word = $row['word'];
