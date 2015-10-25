@@ -76,7 +76,7 @@
           $word = $row['word'];
           if ($words[$i] == $word)
           {
-            echo ("<a style='color:red'>" . $words[$i] . "</a>");
+            echo ("<a data-toggle-'tooltip' title='Slang' style='color:red'>" . $words[$i] . "</a>");
             echo (" ");
             $assigned = true;
           }
@@ -92,5 +92,11 @@
 
 ?>
 </div>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0-rc2/js/bootstrap.min.js"></script>
+<script>
+  $('a').tooltip();
+</script>
 </body>
 </html>

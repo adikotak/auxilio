@@ -70,7 +70,7 @@ curl_close($ch);
         {
           if($wordErrors[$i]==1)
           {
-              ?> <a data-toggle="tooltip" title="<?echo($descriptions[$i]);?>" style="color:red "><?echo $words[$i];?></a><?
+              ?> <a data-toggle="tooltip" title="<?php echo($descriptions[$i]);?>" style="color:red "><?php echo $words[$i];?></a><?php
               echo " ";
           }
           else{
