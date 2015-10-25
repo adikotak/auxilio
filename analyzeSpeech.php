@@ -26,6 +26,11 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 $run = curl_exec($ch);
 curl_close($ch);
-print_r ($run);
+$obj = json_decode($run, true);
 
+foreach ($obj['results'][0]['alternatives'] as $chunk)
+{
+  $transcript = $chunk['transcript'];
+}
+echo ($transcript);
 ?>
