@@ -1,14 +1,36 @@
 <html>
-<head>
-<title>File Upload Form</title>
-</head>
-<body>
-This form allows you to upload a file to the server.<br>
-<?php echo(sys_get_temp_dir()) ?>
+<?php
+define("UPLOAD_DIR", "uploads/");
 
-<form action="getfile.php" method="POST" enctype="multipart/form-data"><br>
-Type (or select) Filename: <input type="file" name="uploadFile">
-<input type="submit" value="Upload File">
-</form>
-</body>
+if (!empty($_FILES["myFile"])) {
+    $myFile = $_FILES["myFile"];
+
+    if ($myFile["error"] !== UPLOAD_ERR_OK) {
+        echo "<p>An error occurred.</p>";
+        exit;
+    }
+
+    // ensure a safe filename
+    $name = preg_replace("/[^A-Z0-9._-]/i", "_", $myFile["name"]);
+
+    // don't overwrite an existing file
+    $i = 0;
+    $parts = pathinfo($name);
+    while (file_exists(UPLOAD_DIR . $name)) {
+        $i++;
+        $name = $parts["filename"] . "-" . $i . "." . $parts["extension"];
+    }
+
+    // preserve file from temporary directory
+    $success = move_uploaded_file($myFile["tmp_name"],
+        UPLOAD_DIR . $name);
+    if (!$success) {
+        echo "<p>Unable to save file.</p>";
+        exit;
+    }
+
+    // set proper permissions on the new file
+    chmod(UPLOAD_DIR . $name, 0644);
+}
+?>
 </html>
