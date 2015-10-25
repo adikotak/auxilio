@@ -1,7 +1,6 @@
 <html>
 <body>
   <div class="container">
-    <h2> Speech to Text Analysis </h2>
 
 <?php
 $file_name = $_GET["fileName"];
