@@ -24,6 +24,7 @@ $words = split('\ ',$essay);
   //  print_r($words);
 $wordErrors = array_fill(0 , count($words) , 0);
 $descriptions = array_fill(0 , count($words) , null);
+$error = false;
 foreach ($words as $word)
 {
   $word = trim($word);
@@ -43,6 +44,7 @@ foreach ($words as $word)
           $descriptions[$id] = $error->description;
           $wordErrors[$id+1] = true;
           $descriptions[$id+1] = $error->description;
+          $error = true;
           break;
         }
       }
@@ -66,6 +68,10 @@ curl_close($ch);
     <h4 style= "font-family:'Open Sans'; color:#EDEDED; width:100vh; font-weight:100; line-height:50x; font-size:30px; margin-top:40px">Your Essay's Results.</h4>
   </center>
     <div class="panel panel-default" style = "margin-top:20px;">
+
+      <?php if (!$error)?>
+      <div class="panel-heading"><h4 style="color:green"> Great Job! You had no writing errors.</h4></div>
+
       <div class="panel-body">
 
         <?php
