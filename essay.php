@@ -1,6 +1,6 @@
  <!DOCTYPE html>
  <html lang="en">
- <script>
+
    <body>
     <?php include('nav.php')?>
     <div class = "color" style = "background-color: #59ABE3; height: 100vh;"  </div>
@@ -17,7 +17,8 @@
                     var key = window.event.keyCode;
                     if (key==190)
                     {
-                       alert(key);
+                      //  alert(key);
+
                      $essay = trim(document.getElementById("textarea").value);
                      $ch = curl_init();
                      $request = {'key':'abcdef', 'data':$essay};
@@ -26,41 +27,39 @@
                       var url = 'http://service.afterthedeadline.com/checkDocument?key='+$request['key']+'&data="'+rawurlencode($essay)+'"';
                       curl_setopt($ch, CURLOPT_URL, $url);
                      $resp = curl_exec($ch);
-                      $results = new SimpleXMLElement($resp);
-                     $words = split('\ ',$essay);
-                     $wordErrors = $wordErrors.fill(0 , count($words) , 0);
-                     $descriptions = $descriptions.fill(0 , count($words) , null);
+                      var results = new SimpleXMLElement($resp);
 
-                     for each ($words in $word)
-                      {
-                      $word = trim($word);
-                       for each ($results in $error)
-                       {
-                        $errors = preg_split('/\s+/',$error->string);
-                         if(count($errors)>1)
-                         {
-                           if($word!=$words[count($words)])
-                          {
-                            $id = array_search($word,$words);
-                            if (trim($error->string)==$word." ".$words[$id+1])
-                            {
-                              $wordErrors[$id] = true;
-                              $descriptions[$id] = $error->description;
-                              $wordErrors[$id+1] = true;
-                              $descriptions[$id+1] = $error->description;
-                              break;
-                            }
-                          }
-                        }
-                        elseif (trim($errors[0])==$word)
-                        {
-                          $id = array_search($word, $words);
-                          $wordErrors[$id] = true;
-                          $descriptions[$id] = $error->description;
-                          break;
-                        }
-                      }
-                    }
+                  //    var descriptions = [];
+                  //      for each (var  in $words)
+                  //     {
+                  //     $word = word.trim();
+                  //       for each (var $error in $results)
+                  //       {
+                  //       $errors = split('/\s+/',$error.string);
+                  //       //  if(count($errors)>1)
+                  //       //  {
+                  //       //    if($word!=$words[count($words)])
+                  //       //   {
+                  //       //     $id = array_search($word,$words);
+                  //       //     if (trim($error->string)==$word." ".$words[$id+1])
+                  //       //     {
+                  //       //       $wordErrors[$id] = true;
+                  //       //       $descriptions[$id] = $error->description;
+                  //       //       $wordErrors[$id+1] = true;
+                  //       //       $descriptions[$id+1] = $error->description;
+                  //       //       break;
+                  //       //     }
+                  //       //   }
+                  //       }
+                  //       elseif (trim($errors[0])==$word)
+                  //       {
+                  //         // $id = array_search($word, $words);
+                  //         // $wordErrors[$id] = true;
+                  //         // $descriptions[$id] = $error->description;
+                  //         // break;
+                  //       }
+                  //     }
+                  //    }
                   //   curl_close($ch);
                   //   var list = document.createElement('ul');
                   // for each ($description in $descriptions)
@@ -68,11 +67,11 @@
                   //   var item = document.createElement('li');
                   //   item.appendChild(document.createTextNode(array[i]));
                   //   list.appendChild(item);
-                  // }
-                  // return list;
-                  // }
+                  //  }
+                  //  return list;
+                  //   }
 
-
+}
               }
               </script>
               <input type="submit" class="btn btn-default submit-button">

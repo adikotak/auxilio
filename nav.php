@@ -43,11 +43,11 @@
     <ul class="nav navbar-nav navbar-right">
 
     <li role="separator" class="divider"></li>
-          <li><a data-scroll href="#featureEssay">Auxilio for Essays</a></li>
-          <li><a data-scroll href="#featureEmail">Auxilio for Emails</a></li>
-          <li><a data-scroll href="#speechToText">Speech to Text</a></li>
-          <li><a data-scroll href="#team">Team</a></li>
-          <li><a data-scroll href="#contactAbout" style = "margin-right: 20px">Contact</a></li>
+          <li><a data-scroll href="index.html#featureEssay">Auxilio for Essays</a></li>
+          <li><a data-scroll href="index.html#featureEmail">Auxilio for Emails</a></li>
+          <li><a data-scroll href="index.html#speechToText">Speech to Text</a></li>
+          <li><a data-scroll href="index.html#team">Team</a></li>
+          <li><a data-scroll href="index.html#contactAbout" style = "margin-right: 20px">Contact</a></li>
 
         </ul>
       </li>
