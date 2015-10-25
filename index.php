@@ -1,6 +1,5 @@
 
 <!DOCTYPE html>
-
 <html>
 <?php include ('nav.php'); ?>
 	<body style="max-width:1500vh; margin: 0 auto; font-family:Helvetica";>
