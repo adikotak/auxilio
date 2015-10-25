@@ -30,10 +30,11 @@ if (!empty($_FILES["myFile"])) {
         echo "<p>Unable to save file.</p>";
         exit;
     }
-
+    echo ($name);
     // set proper permissions on the new file
     chmod(UPLOAD_DIR . $name, 0644);
 }
+  header("Location:analyzeSpeech.php?fileName=". "uploads/". $name)
 ?>
 </div>
 </body>
