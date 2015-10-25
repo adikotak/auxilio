@@ -3,7 +3,7 @@
 
 <html>
 <?php include ('nav.php'); ?>
-	<body style="max-width:1500px; margin: 0 auto; font-family:Helvetica";>
+	<body style="max-width:1500vh; margin: 0 auto; font-family:Helvetica";>
 		<section id="home"></a>
 		<div class = "home" style="height:100vh; background-color: #59ABE3; background-size: 100% 100%;">
 			<container style = "position:absolute; top: 50%; left: 50%; margin-right: -50%; transform: translate(-50%, -50%)">
@@ -31,14 +31,14 @@
 			</div>
 		</div>
 		<section id="team"></a>
-		<div class="team" style="height:93vh; background-color:#8E44AD; margin-top:0px">
+		<div class="team" style="height:93vh; background-color:#16A085; margin-top:0px">
 			<div class="teamText" style="padding-top:50px; margin-left:350px; width:800px">
 				<p style="font-family:'Open Sans'; font-weight:300; color:#fff; margin-top:60px; margin-left:120px; font-size:35px;">Team.</p>
 				<p style="font-family:'Open Sans'; font-weight:300; color:#fff; padding-top:30px; text-align:left; margin-left:120px; font-size:22px;">We are a team of high school students who created Auxilio at Hacking EDU.</p>
 			</div>
 		</div>
 		<section id ="contactAbout"></a>
-		<div class="contactAbout" style="height:93vh; background-color:#9b59b6; margin-top:0px">
+		<div class="contactAbout" style="height:93vh; background-color:#66CC99; margin-top:0px">
 			<div class="contactAbout" style="padding-top:50px; margin-left:350px; width:800px">
 				<p style="font-family:'Open Sans'; font-weight:300; color:#fff; margin-top:60px; margin-left:120px; font-size:35px;">Contact Us.</p>
 				<p style="font-family:'Open Sans'; font-weight:300; color:#fff; padding-top:30px; text-align:left; margin-left:120px; font-size:22px;">If you're interested in Auxilio feel free to email any of us.</p>
