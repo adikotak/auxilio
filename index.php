@@ -1,7 +1,8 @@
 
 <!DOCTYPE html>
+
 <html>
-<?php include ('nav.php'); ?>
+<?php include ('nav0.php'); ?>
 	<body style="max-width:1500vh; margin: 0 auto; font-family:Helvetica";>
 		<section id="home"></a>
 		<div class = "home" style="height:100vh; background-color: #59ABE3; background-size: 100% 100%;">
