@@ -2,7 +2,7 @@
 <html lang="en">
 <?php
 include ('nav.php');
-$essay = trim($_POST['essayEntry']);
+$essay = trim($_GET['essayEntry']);
 // Get cURL resource
 $ch = curl_init();
 // Set some options - we are passing in a useragent too here
