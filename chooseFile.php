@@ -35,11 +35,7 @@ if (!empty($_FILES["myFile"])) {
     // set proper permissions on the new file
     chmod(UPLOAD_DIR . $name, 0644);
 }
-$url = 'analyzeSpeech.php?fileName='. 'uploads/'. $name;
-echo ("<script type='text/javascript'>
-window.onload = function () { top.location.href = '" . $url."'; };
-</script>");
-
+  header("Location:analyzeSpeech.php?fileName=". "uploads/". $name)
 ?>
 </div>
 </body>

@@ -62,7 +62,10 @@ curl_close($ch);
 <body>
 
   <div class ="container">
-    <div class="panel panel-default">
+    <center>
+    <h4 style= "font-family:'Open Sans'; color:#EDEDED; width:100vh; font-weight:100; line-height:50x; font-size:30px; margin-top:40px">Your Essay's Results.</h4>
+  </center>
+    <div class="panel panel-default" style = "margin-top:20px;">
       <div class="panel-body">
 
         <?php

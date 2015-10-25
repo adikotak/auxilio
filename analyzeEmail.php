@@ -2,9 +2,12 @@
 <html lang="en">
   <?php include ('nav.php'); ?>
   <body>
-    <div class = "color" style = "background-color: #59ABE3; height: 100vh;"  </div>
+     <div class = "color" style = "background-color: #59ABE3; height: 100vh;"  </div>
     <div class ="container">
-      <div class="panel panel-default">
+      <center>
+      <h4 style= "font-family:'Open Sans'; color:#EDEDED; width:100vh; font-weight:100; line-height:50x; font-size:30px; margin-top:40px">Your Email's Results.</h4>
+    </center>
+      <div class="panel panel-default" style = "margin-top: 60px">
         <div class="panel-body">
           <?php
             $originalEntry = $_POST['emailEntry'];
