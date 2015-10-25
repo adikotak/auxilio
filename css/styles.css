@@ -1,5 +1,10 @@
 body { padding-top: 7vh; }
 
+div.panel.panel-default.suggestions{
+  height: 80vh;
+  margin-top: 20px;
+}
+
 textarea.form-control.text{
   height: 80vh;
   margin-top: 20px;
@@ -35,4 +40,8 @@ p.header
   margin-top:60px;
   margin-left:120px;
   font-size:24px;
+}
+
+.glyphicon{
+  font-size: 150px;
 }

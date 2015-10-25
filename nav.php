@@ -1,6 +1,7 @@
 <head>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -57,6 +58,7 @@
 
 
 <script src="js/smooth-scroll.min.js"></script>
+
 <script>
 smoothScroll.init({
         speed: 750, // Integer. How fast to complete the scroll in milliseconds
@@ -65,7 +67,7 @@ smoothScroll.init({
     offset: 35, // Integer. How far to offset the scrolling anchor location in pixels
     callbackBefore: function ( toggle, anchor ) {}, // Function to run before scrolling
     callbackAfter: function ( toggle, anchor ) {} // Function to run after scrolling
-  });
+  });fxz
 </script>
 
 </head>
