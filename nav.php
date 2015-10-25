@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-  <title>Bootstrap 101 Template</title>
+  <title>Auxilio: Write the World</title>
 
   <!-- Bootstrap -->
 
@@ -30,7 +30,7 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand"  href="index.php#home" >Home</a>
+    <a class="navbar-brand"  href="index.php#home" style = "font-size: 30px" >Auxilio</a>
   </div>
 
   <!-- Collect the nav links, forms, and other content for toggling -->
@@ -43,11 +43,11 @@
     <ul class="nav navbar-nav navbar-right">
 
     <li role="separator" class="divider"></li>
-          <li><a  href="index.php#featureEssay">Auxilio for Essays</a></li>
-          <li><a  href="index.php#featureEmail">Auxilio for Emails</a></li>
-          <li><a  href="index.php#speechToText">Speech to Text</a></li>
-          <li><a  href="index.php#team">Team</a></li>
-          <li><a  href="index.php#contactAbout" style = "margin-right: 20px">Contact</a></li>
+          <li><a  href="index.php#featureEssay" style = "font-size: 15px">Auxilio for Essays</a></li>
+          <li><a  href="index.php#featureEmail" style = "font-size: 15px">Auxilio for Emails</a></li>
+          <li><a  href="index.php#speechToText" style = "font-size: 15px">Speech to Text</a></li>
+          <li><a  href="index.php#team" style = "font-size: 15px">Team</a></li>
+          <li><a  href="index.php#contactAbout" style = "margin-right: 20px; font-size: 15px">Contact</a></li>
 
         </ul>
       </li>

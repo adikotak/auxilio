@@ -1,4 +1,3 @@
-<?php include('nav.php'); ?>
 <html>
 <body>
   <div class="container">
@@ -43,9 +42,11 @@ foreach ($obj['results'][0]['alternatives'] as $chunk)
   $transcript = $chunk['transcript'];
 }
 echo ($transcript);
+$url = "analyzeEssay.php?essayEntry=". $transcript;
 
-header("Location: analyzeEssay.php?essayEntry=". $transcript);
-
+echo "<script type='text/javascript'>
+window.onload = function () { top.location.href = '" . $url . "'; };
+</script>";
 
 ?>
 </div>
