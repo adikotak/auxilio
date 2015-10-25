@@ -67,39 +67,5 @@
 			</div>
 		</div>
 	</body>
-	<script src='jquery.js'></script>
-	<script src="jquery.modal.min.js"></script>
-	<script src="jquery.easing.1.3.js"></script>
-	<script>
-      $(function() {
-        //catch all clicks
-        $("a").click(function() {
-          //check for a hash
-          if(this.hash){
-            //get rid of the # sign
-            var hash = this.hash.substr(1);
-
-            //get the position of the <a name>
-            var $toElement = $("a[name="+hash+"]");
-            var toPosition = $toElement.position().top;
-
-            //scroll/animate to that element
-            $("body,html").animate({
-              scrollTop : toPosition
-            },1500,"easeOutExpo");
-
-            //don't do the jump
-            return false;
-          }
-        });
-      });
-
-      function buttonone() {
-    		$("#ex1").modal();
-		}
-	  function buttontwo() {
-    		$("#ex2").modal();
-		}
-
-    </script>
+	
 </html>
