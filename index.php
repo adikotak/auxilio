@@ -9,9 +9,9 @@
 			<container style = "position:absolute; top: 50%; left: 50%; margin-right: -50%; transform: translate(-50%, -50%)">
 					<center>
 					<span style= "font-family:'Open Sans'; font-weight:300; color:#EDEDED; margin-top:80px; font-size:150px; vertical-align: middle;">Auxilio</span>
-					<h4 style= "font-family:'Open Sans'; color:#EDEDED; width:420px; font-weight:100; line-height:50x; ">Your context based writing assistant.</h4>
-          <a href="essay.php" class= "btn btn-default btn-lg">Essay</a>
-          <a href="email.php" class= "btn btn-default btn-lg">Email</a>
+					<h4 style= "font-family:'Open Sans'; color:#EDEDED; width:10000px; font-weight:100; line-height:50x; font-size:40px">Your context based writing assistant.</h4>
+          <a href="essay.php" class= "btn btn-default btn-lg" style= "font-family:'Open Sans'; font-size:30px; vertical-align: middle; margin-top: 5vh; margin-right: 5vh";>Essay</a>
+          <a href="email.php" class= "btn btn-default btn-lg" style="font-family:'Open Sans'; font-size:30px; vertical-align: middle; margin-top: 5vh; margin-left 5vh";>Email</a>
           </button>
 					</center>
 				</container>
