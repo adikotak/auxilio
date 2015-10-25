@@ -8,28 +8,21 @@
 <?php
   $originalEntry = $_POST['emailEntry'];
   $originalEntry = trim($originalEntry);
-
   $splitRegex = "/[\s]/";
   $words = preg_split($splitRegex, $originalEntry);
-
   $numWords = count($words);
-
   $greetingNotPresent = true;
-
   if ($words[0]=="Hello" || $words[0]=="Dear" || $words[0]=="Hi")
   {
     $greetingNotPresent = false;
   }
-
   if ($greetingNotPresent)
   {
     echo ("<p style='color:red'> You should probably add a greeting </p>");
   }
-
   $meetingPresent = false;
   $timeNotPresent = true;
   $locationNotPresent = true;
-
   for ($i=0; $i<$numWords; $i++)
   {
     if ($words[$i]== "meeting" || $words[$i]== "Meeting")
@@ -45,7 +38,6 @@
       $locationNotPresent = false;
     }
   }
-
   if ($meetingPresent && $timeNotPresent)
   {
     echo ("<p style='color:red'> Need Location Time </p>");
@@ -54,29 +46,19 @@
   {
     echo ("<p style='color:red'> Need Meeting Location </p>");
   }
-
   $db = "ad_85361005547dc1d";
   $host = "us-cdbr-iron-east-03.cleardb.net";
   $username = "bc27100502fac4";
   $password = "40b5465f";
-
   $con = new mysqli($host, $username, $password, $db);
-
   $table = "slangwords";
-  $lettersArray = array (0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25);
-
+  $query = "SELECT * FROM $table";
   for ($i=0; $i<$numWords; $i++)
   {
     $assigned = false;
-    $firstChar = $words[i][0];
-    $whichLetter = ord($firstChar) - ord('a');
-    $whichNextLetter = $whichLetter +1;
+    $result = $con->query($query);
     if ($result->num_rows>0)
     {
-      $query = "SELECT * FROM $table WHERE idslang BETWEEN $lettersArray[$whichLetter] AND $lettersArray[$whichNextLetter]";
-
-      $result = $con->query($query);
-
       while ($row = $result->fetch_assoc())
       {
           $word = $row['word'];
@@ -95,7 +77,6 @@
     }
   }
   mysqli_close($con);
-
 ?>
 </div>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
