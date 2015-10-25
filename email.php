@@ -2,7 +2,7 @@
 <html lang="en">
   <?php include ('nav.php'); ?>
   <body>
-    <div class = "rip" style = "background-color: #59ABE3" </div>
+    <div class = "color" style = "background-color: #59ABE3; height: 100vh;"  </div>
     <div class = "container" style = "background-color: #59ABE3">
       <div class = "form-group">
     <form method ="post" action ="analyzeEmail.php">
