@@ -1,3 +1,5 @@
+<?php           session_start();
+ ?>
 <!DOCTYPE html>
 <html lang="en">
   <?php include ('nav.php'); ?>
@@ -19,6 +21,7 @@
       <div class="panel panel-default" style = "margin-top: 60px">
         <div class="panel-body" >
           <?php
+
             $originalEntry = $_POST['emailEntry'];
             $originalEntry = trim($originalEntry);
             $splitRegex = "/[\s]/";
@@ -92,7 +95,6 @@
               $sendText = $sendText . " " . $words[$i];
             }
 
-            session_start();
 
             $_SESSION["message"] = $sendText;
             mysqli_close($con);
