@@ -67,7 +67,7 @@
             $host = "us-cdbr-iron-east-03.cleardb.net";
             $username = "bc27100502fac4";
             $password = "40b5465f";
-            $con = new mysqli($host, $username, $password, $db);
+            $con = mysqli_connect($host, $username, $password, $db);
             $table = "slangwords";
             $query = "SELECT * FROM $table";
             for ($i=0; $i<$numWords; $i++)
