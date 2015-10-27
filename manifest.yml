@@ -4,3 +4,7 @@ applications:
   memory: 512M
   instances: 1
   host: auxilio
+  path: .
+  buildpack: https://github.com/cloudfoundry/php-buildpack
+  services:
+  - mysql-db
