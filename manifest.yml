@@ -1,7 +1,6 @@
 applications:
 - name: auxilio
-  framework: node
-  runtime: node10
+  framework: php
   memory: 512M
   instances: 1
   host: auxilio
