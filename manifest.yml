@@ -7,4 +7,4 @@ applications:
   path: .
   buildpack: https://github.com/cloudfoundry/php-buildpack
   services:
-  - mysql-db
+  - ClearDB MySQL Database-w9

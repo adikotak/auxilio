@@ -63,10 +63,10 @@
             }
 
             $sendText = "";
-            $db = "ad_85361005547dc1d";
+            $db = "ad_cda192a887ff69f";
             $host = "us-cdbr-iron-east-03.cleardb.net";
-            $username = "bc27100502fac4";
-            $password = "40b5465f";
+            $username = "be69c4201781ac";
+            $password = "abaf0684";
             $con = new mysqli($host, $username, $password, $db);
             $table = "slangwords";
             $query = "SELECT * FROM $table";
