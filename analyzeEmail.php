@@ -67,13 +67,16 @@
             $host = "us-cdbr-iron-east-03.cleardb.net";
             $username = "bc27100502fac4";
             $password = "40b5465f";
-            $con = mysqli_connect($host, $username, $password, $db);
+            $con = new mysqli($host, $username, $password, $db);
             $table = "slangwords";
             $query = "SELECT * FROM $table";
             for ($i=0; $i<$numWords; $i++)
             {
               $assigned = false;
               $result = $con->query($query);
+              if (!$result) {
+    die('Invalid query: ' . mysql_error());
+}
               if ($result->num_rows>0)
               {
                 while ($row = $result->fetch_assoc())
