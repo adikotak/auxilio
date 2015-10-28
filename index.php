@@ -44,7 +44,7 @@
 		<div class = "speechToText" style ="height: 95vh; background-color:#3A539B; margin-top:0px">
 			<div class="text" style="padding-top:50px; margin-left:350px; width:800px">
 			<p style="font-family:'Open Sans'; font-weight:300; color:#fff; margin-top:60px; margin-left:120px; font-size:35px;">Writing. Smarter.</p>
-			<p style="font-family:'Open Sans'; font-weight:300; color:#fff; padding-top:30px; text-align:left; margin-left:120px; font-size:22px;">With the use of IBM BlueMIX's Watson Speech to Text API, users can dictate their writings into Auxilio for a new dimension of writing profreereading.</p>
+			<p style="font-family:'Open Sans'; font-weight:300; color:#fff; padding-top:30px; text-align:left; margin-left:120px; font-size:22px;">With the use of IBM BlueMIX's Watson Speech to Text API, users can dictate their writings into Auxilio for a new dimension of writing proofreading.</p>
 			<span class="glyphicon glyphicon-education" aria-hidden="true" style = "position: absolute; top: 330%; left: 15%; margin-right: -50%; transform: translate(-50%, -50%)">  </span>
 
 			<center>
