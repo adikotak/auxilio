@@ -23,6 +23,7 @@
           <?php
 
             $originalEntry = $_POST['emailEntry'];
+            //echo ($originalEntry);
             $originalEntry = trim($originalEntry);
             $splitRegex = "/[\s]/";
             $words = preg_split($splitRegex, $originalEntry);
@@ -81,7 +82,7 @@
               {
                 while ($row = $result->fetch_assoc())
                 {
-                    $word = $row['word'];
+                    $word = $row['words'];
                     if ($words[$i] == $word)
                     {
                       echo ("<a data-toggle-'tooltip' title='Slang' style='color:red'>" . $words[$i] . "</a>");
