@@ -4,6 +4,7 @@
   <?php
   include ('nav.php');
   $essay = trim($_GET['essayEntry']);
+  echo ($essay);
   // Get cURL resource
   $ch = curl_init();
   // Set some options - we are passing in a useragent too here
